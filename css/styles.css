@@ -92,6 +92,16 @@ body {
     display: none;
 }
 
+.menu-icon{
+        border: none;
+        box-shadow: none;
+        max-width: 24px;
+        max-height: 24px;
+        background-color: transparent;
+        margin-left: auto;
+        padding: 0;
+}
+
 .header-title .accent {
     color: #2e2f42;
     font-family: "Raleway", sans-serif;
