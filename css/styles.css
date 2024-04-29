@@ -1269,7 +1269,20 @@ margin-bottom: 8px;
         padding-bottom: 100px;
     }
 
+    .footer-flex{
+        align-items: baseline;
+    }
+
     .footer-logo{
         margin-right: 120px;
+
+    }
+
+    .footer-head{
+        display: inline-block;
+    }
+
+    .footer-wrap{
+        margin-right: 80px;g
     }
 }
