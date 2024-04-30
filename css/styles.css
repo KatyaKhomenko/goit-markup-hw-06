@@ -11,6 +11,8 @@ a {
 }
 img {
     display: block;
+    max-width: 100%;
+    height: auto ;
 }
 
 p, h1, h2, h3{
@@ -21,6 +23,7 @@ p, h1, h2, h3{
     width: 320px;
     padding-left: 16px;
     padding-right: 16px;
+    margin: 0 auto;
 }
 
 
@@ -35,8 +38,8 @@ body {
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 1px 6px rgba(46, 47, 66, 0.08);
-    padding-top: 16px;
-    padding-bottom: 16px;
+    /* padding-top: 16px;
+    padding-bottom: 16px; */
 }
 
 
@@ -262,7 +265,12 @@ body {
         display: flex;
             flex-direction: column;
             gap: 24px;
-            margin-bottom: 48px;
+            
+    }
+
+    .mob-address{
+        font-style: normal;
+        margin-bottom: 48px;
     }
 
     .mob-address-text{
@@ -271,6 +279,10 @@ body {
                 line-height: 1.2;
                 letter-spacing: 0.02em;
                 color: #434455;
+    }
+
+    .blue{
+        color: #4d5ae5;
     }
 
     .icon-list-mob{
@@ -308,6 +320,7 @@ body {
     padding-bottom: 188px; */
     padding-top: 72px;
     padding-bottom: 72px;
+    max-width: 320px;
     margin: 0 auto;
     /* max-width: 1440px; */
     background-image: linear-gradient(    
@@ -528,7 +541,7 @@ body {
     text-align: center;
     color: #434455;
     text-align: center;
-    
+    margin-bottom: 8px;
 }
 
 .icon-list-team {
@@ -663,8 +676,6 @@ background-color: #404bbf;
     padding-bottom: 100px; */
     padding-top: 96px;
         padding-bottom: 96px;
-    display: flex;
-    align-items: baseline;
 
 }
 
@@ -813,7 +824,7 @@ background-color: #404bbf;
 }
 
 .footer-input{
-    width: 264px;
+    width: 288px;
     height: 40px;
     border: 1px solid #ffffff;
     background-color: transparent;
@@ -1080,8 +1091,7 @@ margin-bottom: 8px;
 @media screen and (min-width: 768px) {
     .container {
         width: 768px;
-        padding-left: 16px;
-        padding-right: 16px;
+        
     }
 
     .menu-open-btn {
@@ -1093,9 +1103,7 @@ margin-bottom: 8px;
     }
 
     .header-container{
-                width: 100%;
-                    margin-left: 0;
-                    margin-right: 0;
+    
     }
 
     .header-menu-list{
@@ -1113,8 +1121,16 @@ margin-bottom: 8px;
         gap: 12px;
     }
 
+    .header-address-item{
+        font-weight: 400;
+            font-size: 12px;
+            line-height: 1.16667;
+            letter-spacing: 0.04em;
+            color: #434455;
+    }
+
     .features-list {
-        gap: 24px 72px;
+        gap: 72px 24px;
     }
 
     .features-item{
@@ -1124,6 +1140,8 @@ margin-bottom: 8px;
     .features-item-subtitle{
         text-align: left;
     }
+
+   
 
     .team{
         padding-top: 104px;
@@ -1138,6 +1156,7 @@ margin-bottom: 8px;
     .section{
         padding-top: 112px;
         padding-bottom: 112px;
+        max-width: 768px;
             background-image: linear-gradient(
                 rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
@@ -1223,7 +1242,7 @@ margin-bottom: 8px;
 
 @media screen and (min-width: 1158px) {
     .container{
-        max-width: 1158px;
+        width: 1158px;
         padding-left: 15px;
         padding-right: 15px;
     }
@@ -1235,14 +1254,31 @@ margin-bottom: 8px;
             margin-left: 120px;
     }
 
+    .header-title{
+        margin-right: 76px;
+    }
+
+    .header-address-link{
+                flex-direction: row;
+                    gap: 40px;
+    }
+
     .header-address{
-                margin-left: 20px;
+                margin-left: auto;
     }
 
     .header-address-link{
         display: flex;
         align-items: center;
     }
+
+        .header-address-item {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 1.16667;
+            letter-spacing: 0.04em;
+            color: #434455;
+        }
 
     .menu-open-btn{
         display: none;
@@ -1268,6 +1304,10 @@ margin-bottom: 8px;
         line-height: 1.2;
         text-align: left;
     }
+
+        .features-item-title {
+            font-weight: 400;
+        }
 
     .features-item{
         width: calc((100% - 3 * 24px) / 4);
@@ -1338,7 +1378,7 @@ margin-bottom: 8px;
     }
 
     .main-item{
-        width: 30%;
+        width: calc((100% - 48px) / 3)
     }
 
     .footer{
@@ -1348,6 +1388,7 @@ margin-bottom: 8px;
 
     .footer-flex{
         align-items: baseline;
+        gap: 0;
     }
 
     .footer-logo{
